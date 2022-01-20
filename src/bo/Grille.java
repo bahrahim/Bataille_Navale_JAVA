@@ -46,6 +46,12 @@ public class Grille {
             System.out.println("Erreur de placement ");
             return;
         }
+        if (grille[l][c]== '-'){
+            grille[l][c]= t;
+        }
+        else {
+            System.out.println("cette place est deja prise");
+        }
     }
 
 

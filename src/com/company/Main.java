@@ -23,12 +23,10 @@ public class Main {
 
 
 
-
-
-
-
         //Creation de la grille
         Grille g1 = new Grille(10,10);
         g1.afficher_grille();
+
+        g1.placePlayer(5,3,'B');
     }
 }
