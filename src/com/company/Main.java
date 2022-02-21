@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-
+/*
         System.out.println("Veuillez entrer votre nom : ");
         Scanner scan = new Scanner(System.in);
         String str = scan.nextLine();
@@ -22,11 +22,17 @@ public class Main {
         System.out.println("Vous etes le player 2 " + str2);
 
 
+ */
+
 
         //Creation de la grille
         Grille g1 = new Grille(10,10);
-        g1.afficher_grille();
-
-        g1.placePlayer(5,3,'B');
+        g1.afficherGrille();
+        //Placer un joueur j
+        g1.placePlayer(3,3,'J');
+        g1.afficherGrille();
+        //Deplacer le joueur j
+        g1.deplacerVersHaut();
+        g1.afficherGrille();
     }
 }
